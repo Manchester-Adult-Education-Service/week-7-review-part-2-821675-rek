@@ -103,8 +103,10 @@ print("-------------------------------------------\n"
 # Blast off!
 #
 # Write your code below:
-
-
+user_number = int(input("Enter a starting number: "))
+for i in range (user_number, 0, -1):
+    print(f"Counting down {i}")
+print("Blast off!")
 # -------------------------------------------
 # Submitting Your Work
 # -------------------------------------------
