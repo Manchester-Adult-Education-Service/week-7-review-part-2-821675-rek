@@ -139,8 +139,9 @@ print("-------------------------------------------\n"
 # 3 x 10 = 30
 #
 # Write your code below:
-
-
+user_number2 = int(input("Please enter a number: "))
+for i in range(1, 11):
+    print (f"{user_number2} x {i} = {(user_number2 * i)}")
 # -------------------------------------------
 # Submitting Your Work
 # -------------------------------------------
