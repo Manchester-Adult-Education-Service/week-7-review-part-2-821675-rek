@@ -176,7 +176,17 @@ print("-------------------------------------------\n"
 # Correct! Well done.
 #
 # Write your code below:
+from numpy import random
 
+secret_number = random.randint(9) + 1
+guess_number = int(input("Enter your guess (between 1 and 10): "))
+while guess_number != secret_number:
+    if guess_number < secret_number:
+        print(f"Too low!")
+    elif guess_number > secret_number:
+        print(f"Too high!")
+    guess_number = int(input("Try again: "))
+print(f"Correct! Well done.")
 
 # -------------------------------------------
 # Submitting Your Work
