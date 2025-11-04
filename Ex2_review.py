@@ -222,8 +222,11 @@ print("-------------------------------------------\n"
 # Output: The total is 19
 #
 # Write your code below:
-
-
+total=0
+for i in range (1,6):
+    user_input = int(input(f"Enter number {i}: "))
+    total += user_input
+print(f"The total is {total}")
 
 
 # Extension 2:
@@ -244,8 +247,12 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
-
+correct_password = "python123"
+user_password = input("Please enter a password: ")
+while user_password != correct_password:
+    print("Incorrect, try again.")
+    user_password = input("Please enter a password: ")
+print("Access granted!")
 
 # -------------------------------------------
 # ADVANCED ACTIVITY
@@ -272,9 +279,23 @@ print("-------------------------------------------\n"
 # 1 2 3 4 5 6 7 8 9 10
 #
 # Write your code below:
-
-
-
+while True:
+    print("\nMenu:")
+    print("1. Count to 10")
+    print("2. Show even numbers between 1-20")
+    print("3. Exit")
+    choice = input("Enter your choice (1-3): ")
+    if choice == "1":
+        for i in range (1,11):
+            print(i, end=" ")
+            print()
+    elif choice == "2":
+        for i in range (2,21,2):
+            print(i, end=" ")
+            print()
+    elif choice == "3":
+        print("Exiting the program. Goodbye!")
+        break
 
 # -------------------------------------------
 # Submitting Your Work
